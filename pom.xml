@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--此pom文件仅仅用于工程模块管理，不作为实际模块依赖-->
+    <groupId>mall.staringpoint</groupId>
+    <artifactId>StartingPointMall</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <description>起点商城 https://github.com/Lao-Feng</description>
+
+    <modules>
+        <module>staring-point-mall-parent</module>
+        <module>staring-point-mall-common</module>
+    </modules>
+</project>
