@@ -1,6 +1,6 @@
 package mall.staringpoint.core.config;
 
-import com.framework.core.annotation.LoginUserArgumentResolver;
+import mall.staringpoint.core.annotation.LoginUserArgumentResolver;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;

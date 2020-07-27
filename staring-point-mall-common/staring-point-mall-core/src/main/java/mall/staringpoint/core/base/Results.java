@@ -1,7 +1,7 @@
 package mall.staringpoint.core.base;
 
 
-import com.framework.core.enums.BaseResultCode;
+import mall.staringpoint.core.enums.BaseResultCode;
 
 /**
  * 响应工具

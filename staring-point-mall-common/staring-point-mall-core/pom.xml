@@ -19,23 +19,21 @@
 
     <dependencies>
         <!--Feign okHttp start-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
-            <!--<version>${spring-cloud-openfeign.version}</version>-->
-        </dependency>
-
-        <!--<dependency>-->
-        <!--<groupId>io.github.openfeign</groupId>-->
-        <!--<artifactId>feign-okhttp</artifactId>-->
-        <!--<version>${feign-okhttp.version}</version>-->
-        <!--</dependency>-->
-        <!--Feign okHttp end-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-starter-openfeign</artifactId>-->
+<!--        </dependency>-->
 
         <!--springBoot start-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+            <version>2.3.2.RELEASE</version>
+            <scope>compile</scope>
         </dependency>
         <!--springBoot end-->
 

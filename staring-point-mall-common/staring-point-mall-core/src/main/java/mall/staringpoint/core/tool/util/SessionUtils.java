@@ -1,7 +1,7 @@
 package mall.staringpoint.core.tool.util;
 
-import com.framework.core.base.UserSession;
 import lombok.experimental.UtilityClass;
+import mall.staringpoint.core.base.UserSession;
 
 /**
  * @Author: FengJie

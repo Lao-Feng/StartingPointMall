@@ -1,7 +1,7 @@
 package mall.staringpoint.core.enums;
 
-import com.framework.core.base.ResultCode;
 import lombok.AllArgsConstructor;
+import mall.staringpoint.core.base.ResultCode;
 
 /**
  * 通用的响应码,如需扩展,或者从新实现/继承{@link ResultCode}接口
@@ -9,6 +9,7 @@ import lombok.AllArgsConstructor;
  * @Author: FengJie
  * @Date: 2020/7/26 9:59
  */
+
 @AllArgsConstructor
 public enum BaseResultCode implements ResultCode {
 

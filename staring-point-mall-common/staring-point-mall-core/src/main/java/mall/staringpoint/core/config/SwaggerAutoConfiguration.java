@@ -21,8 +21,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * @Date: 2020/7/26 18:18
  */
 @Configuration
-@EnableConfigurationProperties
 @EnableSwagger2
+@EnableConfigurationProperties
 public class SwaggerAutoConfiguration {
 
     private static final String BASE_PACKAGE = "com.framework";
@@ -46,7 +46,7 @@ public class SwaggerAutoConfiguration {
     public ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("SwaggerAPI")
-                .description("脚手架口文档")
+                .description("起点商城接口文档")
                 .version(VERSION)
                 .build();
     }

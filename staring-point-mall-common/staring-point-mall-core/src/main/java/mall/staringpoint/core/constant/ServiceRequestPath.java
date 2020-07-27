@@ -6,7 +6,7 @@ package mall.staringpoint.core.constant;
  * @Author: FengJie
  * @Date: 2020/7/26 16:47
  */
-public interface RequestPath {
+public interface ServiceRequestPath {
 
     //product部分
 

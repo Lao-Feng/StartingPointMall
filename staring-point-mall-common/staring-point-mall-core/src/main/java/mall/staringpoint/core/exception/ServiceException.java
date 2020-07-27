@@ -1,8 +1,8 @@
 package mall.staringpoint.core.exception;
 
-import com.framework.core.base.ResultCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import mall.staringpoint.core.base.ResultCode;
 
 /**
  * 基础异常类

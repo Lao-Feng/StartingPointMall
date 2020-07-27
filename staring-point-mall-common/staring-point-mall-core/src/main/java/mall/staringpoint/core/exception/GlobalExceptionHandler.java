@@ -1,8 +1,8 @@
 package mall.staringpoint.core.exception;
 
-import com.framework.core.base.Result;
-import com.framework.core.base.Results;
 import lombok.extern.slf4j.Slf4j;
+import mall.staringpoint.core.base.Result;
+import mall.staringpoint.core.base.Results;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 /**
  * 异常捕获处理
+ * @author FengJie
  */
 @Slf4j
 @Component
