@@ -8,22 +8,14 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>staring-point-mall-core</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>core</name>
     <description>核心依赖模块</description>
+    <artifactId>staring-point-mall-core</artifactId>
 
     <properties>
         <java.version>1.8</java.version>
     </properties>
 
     <dependencies>
-        <!--Feign okHttp start-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-openfeign</artifactId>-->
-<!--        </dependency>-->
-
         <!--springBoot start-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

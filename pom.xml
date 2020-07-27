@@ -13,5 +13,9 @@
     <modules>
         <module>staring-point-mall-parent</module>
         <module>staring-point-mall-common</module>
+        <module>staring-point-mall-common/staring-point-mall-redis</module>
+        <module>staring-point-mall-common/staring-point-mall-mq</module>
+        <module>staring-point-mall-common/staring-point-mall-nacos</module>
+        <module>staring-point-mall-common/staring-point-mall-mysql</module>
     </modules>
 </project>
