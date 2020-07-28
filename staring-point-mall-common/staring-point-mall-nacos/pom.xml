@@ -5,10 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>StartingPointMall</artifactId>
         <groupId>mall.staringpoint</groupId>
+        <artifactId>staring-point-mall-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../../pom.xml</relativePath>
     </parent>
 
     <artifactId>staring-point-mall-nacos</artifactId>
