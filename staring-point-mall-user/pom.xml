@@ -10,7 +10,23 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>staring-point-mall-order</artifactId>
-    <description>起点商城-订单模块</description>
+    <artifactId>staring-point-mall-user</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>mall.staringpoint</groupId>
+            <artifactId>staring-point-mall-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>mall.staringpoint</groupId>
+            <artifactId>staring-point-mall-nacos</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>mall.staringpoint</groupId>
+            <artifactId>staring-point-mall-mysql</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
