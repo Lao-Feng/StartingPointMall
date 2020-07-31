@@ -26,7 +26,7 @@
         <spring-cloud-openfeign.version>2.0.1.RELEASE</spring-cloud-openfeign.version>
         <org.mapstruct.version>1.2.0.Final</org.mapstruct.version>
         <org.projectlombok.version>1.18.4</org.projectlombok.version>
-        <alibaba-nacos.version>0.2.1.RELEASE</alibaba-nacos.version>
+        <alibaba-mall.staringpoint.nacos.version>0.2.1.RELEASE</alibaba-mall.staringpoint.nacos.version>
         <swagger.version>2.9.2</swagger.version>
         <httpclient.version>4.5.3</httpclient.version>
         <feign-httpclient.version>8.18.0</feign-httpclient.version>
@@ -40,6 +40,7 @@
         <feign-okhttp.version>10.2.0</feign-okhttp.version>
         <redisson.version>3.8.2</redisson.version>
         <actuator.version>2.0.4.RELEASE</actuator.version>
+        <alibaba.nacos.version>2.2.1.RELEASE</alibaba.nacos.version>
     </properties>
 
     <dependencies>
