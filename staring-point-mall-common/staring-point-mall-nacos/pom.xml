@@ -12,4 +12,24 @@
 
     <artifactId>staring-point-mall-nacos</artifactId>
     <description>配置中心、注册中心 模块</description>
+
+    <properties>
+        <nacos.version>2.2.1.RELEASE</nacos.version>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+            <version>${nacos.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+            <version>${nacos.version}</version>
+        </dependency>
+
+    </dependencies>
 </project>
