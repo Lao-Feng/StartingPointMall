@@ -6,6 +6,10 @@
     <groupId>mall.staringpoint</groupId>
     <artifactId>staring-point-mall-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <modules>
+        <module>../staring-point-mall-order</module>
+        <module>../staring-point-mall-user</module>
+    </modules>
     <packaging>pom</packaging>
     <description>起点商城父模块 https://github.com/Lao-Feng</description>
 

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>staring-point-mall-parent</artifactId>
+        <groupId>mall.staringpoint</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../staring-point-mall-parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>staring-point-mall-user</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>mall.staringpoint</groupId>
+            <artifactId>staring-point-mall-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>mall.staringpoint</groupId>
+            <artifactId>staring-point-mall-nacos</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>mall.staringpoint</groupId>
+            <artifactId>staring-point-mall-mysql</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
