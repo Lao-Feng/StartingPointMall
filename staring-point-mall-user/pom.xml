@@ -6,9 +6,10 @@
         <artifactId>staring-point-mall-parent</artifactId>
         <groupId>mall.staringpoint</groupId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../staring-point-mall-parent/pom.xml</relativePath>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
+    <version>${version}</version>
 
     <artifactId>staring-point-mall-user</artifactId>
 
@@ -16,16 +17,13 @@
         <dependency>
             <groupId>mall.staringpoint</groupId>
             <artifactId>staring-point-mall-core</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>mall.staringpoint</groupId>
-            <artifactId>staring-point-mall-nacos</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>
             <groupId>mall.staringpoint</groupId>
             <artifactId>staring-point-mall-mysql</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
