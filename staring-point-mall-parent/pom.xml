@@ -15,11 +15,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>起点商城父模块 https://github.com/Lao-Feng</description>
-
-    <modules>
-        <module>../staring-point-mall-order</module>
-        <module>../staring-point-mall-user</module>
-    </modules>
+    
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
