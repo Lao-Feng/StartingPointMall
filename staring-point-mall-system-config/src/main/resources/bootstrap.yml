@@ -1,0 +1,25 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: system-config-service
+
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml
+        prefix: framework
+        server-addr: 127.0.0.1:8848
+      discovery:
+        server-addr: 127.0.0.1:8848
+  profiles:
+    active: public,core
+
+  datasource:
+    url: jdbc:mysql://${MYSQL_SERVER:localhost}:${MYSQL_SERVER_PORT:3306}/system-config?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false&allowPublicKeyRetrieval=true
+    username: ${MYSQL_USER:root}
+    password: ${MYSQL_PASSWORD:123456}
+    druid:
+      connection-error-retry-attempts: 10
+      connection-init-sqls: ["SET NAMES utf8mb4 COLLATE utf8mb4_general_ci"]

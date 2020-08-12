@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml
+        prefix: framework
+        server-addr: 127.0.0.1:8848
+      discovery:
+        server-addr: 127.0.0.1:8848
+  profiles:
+    active: public,core
+
+

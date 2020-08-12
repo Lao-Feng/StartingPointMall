@@ -1,0 +1,61 @@
+version: "3.3"
+
+services:
+
+  zentao:
+    image: idoop/zentao:11.5.1
+    container_name: zentao-server
+    restart: always
+    environment:
+      ADMINER_USER: "root"
+      ADMINER_PASSWD: "12456"
+      BIND_ADDRESS: "false"
+    ports:
+      - 10000:80
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - $PWD/data/zbox/:/opt/zbox/
+    volumes:
+      - "E:/StartingPointMall/docker/imgs/docker-zentao:/var/lib/zentao"
+
+
+  mysql:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+    command:
+      --default-authentication-plugin=mysql_native_password
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_general_ci
+      --explicit_defaults_for_timestamp=true
+      --lower_case_table_names=1
+      --max_allowed_packet=128M;
+    ports:
+      - 3306:3306
+    volumes:
+      - "E:/StartingPointMall/docker/imgs/docker-mysql/data:/var/lib/mysql"
+
+
+  nacos-server:
+    image: nacos/nacos-server
+    ports:
+      - "8848:8848"
+    environment:
+      - MODE:standalone
+      - SPRING_DATASOURCE_PLATFORM:mysql
+      - MYSQL_SERVICE_HOST:127.0.0.1
+      - MYSQL_SERVICE_PORT=3306
+      - MYSQL_SERVICE_USER=root
+      - MYSQL_SERVICE_PASSWORD=123456
+      - MYSQL_SERVICE_DB_NAME=nacos
+    volumes:
+      - "E:/StartingPointMall/docker/imgs/docker-nacos-server:/var/lib/nacos-server"
+
+
+  redis:
+    image: redis
+    ports:
+      - 6379:6379
+    volumes:
+      - "E:/StartingPointMall/docker/imgs/docker-redis:/var/lib/redis"

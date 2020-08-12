@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-        <modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
 
     <parent>
         <artifactId>staring-point-mall-parent</artifactId>
@@ -10,8 +10,9 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>staring-point-mall-user</artifactId>
-    <description>起点商场-用户模块</description>
+    <artifactId>staring-point-mall-system-config</artifactId>
+    <description>起点商城-系统配置模块</description>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
@@ -19,6 +20,15 @@
             <artifactId>staring-point-mall-core</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>mall.staringpoint</groupId>-->
+<!--            <artifactId>staring-point-mall-redis</artifactId>-->
+<!--        </dependency>-->
+
     </dependencies>
+
+
+
 
 </project>
