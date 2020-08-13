@@ -15,12 +15,10 @@ import mall.staringpoint.core.base.BaseEntity;
  * @since 2020-08-13
  */
 @Data
-@EqualsAndHashCode(callSuper = true)
-@Accessors(chain = true)
 @TableName("dictionary")
+@Accessors(chain = true)
+@EqualsAndHashCode(callSuper = true)
 public class DictionaryEntity extends BaseEntity {
-
-private static final long serialVersionUID=1L;
 
     /**
      * 代码
@@ -33,6 +31,4 @@ private static final long serialVersionUID=1L;
     private String name;
 
     private String module;
-
-
 }
