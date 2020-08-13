@@ -7,9 +7,10 @@ import org.springframework.context.annotation.ComponentScan;
 
 /**
  * @author FengJie
- */@EnableDiscoveryClient
+ */
+@EnableDiscoveryClient
 @SpringBootApplication
-@ComponentScan(basePackages = "mall.staringpoint")
+@ComponentScan(basePackages = "mall.staringpoint.*")
 public class SystemConfigApplication {
     public static void main(String[] args) {
         SpringApplication.run(SystemConfigApplication.class, args);

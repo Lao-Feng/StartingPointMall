@@ -1,6 +1,7 @@
 package mall.staringpoint.core.base;
 
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 import java.time.LocalDateTime;
 
@@ -10,48 +11,16 @@ import java.time.LocalDateTime;
  * @Description: 基础实体类
  */
 @Data
+@Accessors(chain = true)
 public class BaseEntity {
 
     public static final Integer ON = 1;
     public static final Integer OFF = 2;
 
+    private Long id;
     private Long createBy;
     private Long updateBy;
     private LocalDateTime createTime;
     private LocalDateTime updateTime;
     private Integer enableFlag;
-
-    public static BaseEntity of() {
-        return new BaseEntity();
-    }
-
-    @SuppressWarnings("unchecked")
-    public <T extends BaseEntity> T withCreateBy(Long createBy) {
-        setCreateBy(createBy);
-        return (T) this;
-    }
-
-    @SuppressWarnings("unchecked")
-    public <T extends BaseEntity> T withUpdateBy(Long updateBy) {
-        setUpdateBy(updateBy);
-        return (T) this;
-    }
-
-    @SuppressWarnings("unchecked")
-    public <T extends BaseEntity> T withCreateTime(LocalDateTime createTime) {
-        setCreateTime(createTime);
-        return (T) this;
-    }
-
-    @SuppressWarnings("unchecked")
-    public <T extends BaseEntity> T withUpdateTime(LocalDateTime updateTime) {
-        setUpdateTime(updateTime);
-        return (T) this;
-    }
-
-    @SuppressWarnings("unchecked")
-    public <T extends BaseEntity> T withEnableFlag(Integer enableFlag) {
-        setEnableFlag(enableFlag);
-        return (T) this;
-    }
 }
