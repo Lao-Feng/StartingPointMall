@@ -1,6 +1,9 @@
 package mall.staringpoint.core.base;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
@@ -10,6 +13,9 @@ import java.io.Serializable;
  * @Description: 基础响应实体
  */
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Result<T> implements Serializable {
 
     /**
