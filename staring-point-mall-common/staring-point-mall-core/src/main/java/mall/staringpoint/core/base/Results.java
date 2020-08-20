@@ -17,30 +17,28 @@ public class Results {
 
     public static <T> Result success(T data) {
         return Result.builder()
-                .code(BaseResultCode.SUCCESS.code())
-                .message(BaseResultCode.SUCCESS.msg())
+                .resultCode(BaseResultCode.SUCCESS)
                 .data(data)
                 .build();
     }
 
     public static Result fail(ResultCode status) {
         return Result.builder()
-                .code(status.code())
-                .message(status.msg())
+                .resultCode(status)
                 .build();
     }
 
+    // TODO: 2020/8/20 待完善
+    
     public static Result fail(Throwable error) {
         return Result.builder()
-                .code(BaseResultCode.FAILED.code())
-                .message(error.getMessage())
+                .resultCode(BaseResultCode.FAILED)
                 .build();
     }
 
     public static Result fail(Integer code, String resultMsg) {
+        // BaseResultCode baseResultCode = new BaseResultCode(code, resultMsg);
         return Result.builder()
-                .code(code)
-                .message(resultMsg)
                 .build();
     }
 }
