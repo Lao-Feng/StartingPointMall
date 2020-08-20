@@ -3,7 +3,11 @@ package mall.staringpoint.systemconfig.web.controller;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import mall.staringpoint.core.base.Result;
+import mall.staringpoint.core.base.Results;
+import mall.staringpoint.systemconfig.service.api.DictionaryService;
 import mall.staringpoint.systemconfig.web.req.BaseDictionaryRequest;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,10 +26,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/dictionary")
 public class DictionaryController {
+    @Autowired
+    private DictionaryService service;
 
     @PostMapping
     @ApiOperation("新增字典")
-    public void add(BaseDictionaryRequest request) {
+    public Result add(BaseDictionaryRequest request) {
+        return Results.success();
     }
 
     @PutMapping
