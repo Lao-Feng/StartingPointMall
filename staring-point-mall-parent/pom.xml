@@ -35,7 +35,7 @@
         <pagehelper.version>1.2.5</pagehelper.version>
         <alibaba.druid>1.1.10</alibaba.druid>
         <fastjson.version>1.2.49</fastjson.version>
-        <guava.version>26.0-jre</guava.version>
+        <guava.version>29.0-jre</guava.version>
         <hutool.version>5.3.10</hutool.version>
         <feign-okhttp.version>10.2.0</feign-okhttp.version>
         <redisson.version>3.8.2</redisson.version>
